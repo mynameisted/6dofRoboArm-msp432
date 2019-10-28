@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;i2cmasterexample1_MSP_EXP432P401R_tirtos_ccs&apos; to &apos;msp432p401r_mpu6050&apos;" description="Rename resource &apos;i2cmasterexample1_MSP_EXP432P401R_tirtos_ccs&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/i2cmasterexample1_MSP_EXP432P401R_tirtos_ccs" name="msp432p401r_mpu6050" stamp="1572271117379" updateReferences="true"/>
+</session>
