@@ -1,0 +1,8 @@
+
+**** Build of configuration Debug for project i2cmasterexample1_MSP_EXP432P401R_tirtos_ccs ****
+
+"C:\\ti\\ccs900\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+gmake[1]: 'i2cmasterexample1_MSP_EXP432P401R_tirtos_ccs.out' is up to date.
+
+**** Build Finished ****
