@@ -1,10 +1,12 @@
 Instructions:
-Open the entire folder as a workspace in CCS studio.
+          Open the entire folder as a workspace in CCS studio.
 
-     Circuit Schematics
-MPU6050 	-		MSP432P401R
----------------------------------
-VCC					P6.0
-GND					GND
-SCL					P6.5
-SDA 				P6.4
+Circuit Schematics (MSP432P401R - MPU6050)
+-----
+VCC <--> P6.0
+
+GND <--> GND
+
+SCL <--> P6.5
+
+SDA <--> P6.4
