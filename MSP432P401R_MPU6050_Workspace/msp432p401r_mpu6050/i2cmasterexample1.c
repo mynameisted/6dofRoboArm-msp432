@@ -40,11 +40,21 @@
 #include <stdio.h>
 #include "msp432_mpu6050.h"
 #include "msp.h"
+#define GYRO_DIV 131
+#define ACCEL_DIV 16384.0
+
 /*
  *  ======== mainThread ========
  */
 void *mainThread(void *arg0)
 {
+    volatile int16_t gyroX;
+    volatile int16_t gyroY;
+    volatile int16_t gyroZ;
+    volatile long double accelX;
+    volatile long double accelY;
+    volatile long double accelZ;
+
     printf("\n== Start of thread ==\n\n");
     P1DIR |= BIT0;
     P1OUT &= ~BIT0;
@@ -62,10 +72,16 @@ void *mainThread(void *arg0)
             //getGyroData();
             // Gyro Data
             int16_t* gyro = getGyro();
-            printf("[Gyro]  X = %-4d, Y =  %-4d, Z = %-4d\n", gyro[0]/16, gyro[1]/16, gyro[2]/16);
+            gyroX = gyro[0] / GYRO_DIV;
+            gyroY = gyro[1] / GYRO_DIV;
+            gyroZ = gyro[2] / GYRO_DIV;
+            //printf("[Gyro]  X = %-4d, Y =  %-4d, Z = %-4d\n", gyro[0]/131, gyro[1]/131, gyro[2]/131);
             //Accel data
             int16_t* accel = getAccel();
-            printf("\n[Accel] X = %-4d, Y = %-4d, Z = %-4d\n", accel[0]/2048, accel[1]/2048, accel[2]/2048);
+            accelX = accel[0] / ACCEL_DIV;
+            accelY = accel[1] / ACCEL_DIV;
+            accelZ = accel[2] / ACCEL_DIV;
+            //printf("\n[Accel] X = %-4d, Y = %-4d, Z = %-4d\n", accel[0]/16384, accel[1]/2048, accel[2]/2048);
             printf("----------------------------------------\n");
             delayMs(1000);
             //delayMs(11900);
