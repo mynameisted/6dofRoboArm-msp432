@@ -1,0 +1,134 @@
+// These arguments were used when this file was generated. They will be automatically applied on subsequent loads 
+// via the GUI or CLI invocations. Run CLI with '--help' for additional information on how to override these arguments.
+// @cliArgs --board "/ti/boards/MSP_EXP432P401R" --product "simplelink_msp432p4_sdk@3.30.00.13"
+// @versions {"data":"2019083011","timestamp":"2019083011","tool":"1.2.952","templates":"2019083011"}
+
+var RTOS = scripting.addModule("/ti/drivers/RTOS");
+var I2C = scripting.addModule("/ti/drivers/I2C");
+var I2C1 = I2C.addInstance();
+var Power = scripting.addModule("/ti/drivers/Power");
+var Board = scripting.addModule("/ti/drivers/Board");
+var DriverLib = scripting.addModule("/ti/devices/DriverLib");
+var UART = scripting.addModule("/ti/drivers/UART");
+var UART1 = UART.addInstance();
+var ADC = scripting.addModule("/ti/drivers/ADC");
+var ADC1 = ADC.addInstance();
+var ADC2 = ADC.addInstance();
+var PWM = scripting.addModule("/ti/drivers/PWM");
+var PWM1 = PWM.addInstance();
+var PWM2 = PWM.addInstance();
+var PWM3 = PWM.addInstance();
+var PWM4 = PWM.addInstance();
+var PWM5 = PWM.addInstance();
+var PWM6 = PWM.addInstance();
+var PWM7 = PWM.addInstance();
+// Name
+RTOS.timer0.resource.$name = "MyTIMER_A1";
+// Name - The C/C++ identifier used in applications as the index parameter passed to I2C runtime APIs
+I2C1.$name = "CONFIG_I2C_0";
+// Name
+I2C1.i2c.$name = "MyI2C1";
+// Assign pin
+I2C1.i2c.sdaPin.$assign = "boosterpack.10"; // P6.4
+// Assign pin
+I2C1.i2c.sclPin.$assign = "boosterpack.9"; // P6.5
+// Name
+Power.performanceLevel3.$name = "ti_drivers_power_PowerMSP432PerfLevels0";
+// Name
+Power.performanceLevel2.$name = "ti_drivers_power_PowerMSP432PerfLevels1";
+// Name
+Power.performanceLevel1.$name = "ti_drivers_power_PowerMSP432PerfLevels2";
+// Name
+Power.performanceLevel0.$name = "ti_drivers_power_PowerMSP432PerfLevels3";
+// Use Hardware - Select the hardware to use, or 'None' to use available header pins
+UART1.$hardware = system.deviceData.board.components.XDS110UART;
+// Baud Rates - The set of baud rates that are used by this instance. On some devices, these rates are used to pre-compute a table of clock dividers necessary for each rate.
+UART1.baudRates = [9600];
+// Name - The C/C++ identifier used in applications as the index parameter passed to UART runtime APIs
+UART1.$name = "Bluetooth_UART";
+// Name
+UART1.uart.$name = "MyUART1";
+// Name - The C/C++ identifier used in applications as the index parameter passed to ADC runtime APIs
+ADC1.$name = "Flex_Sensor";
+// Name
+ADC1.adc.$name = "MyADC141";
+// Assign pin
+ADC1.adc.adcPin.$assign = "boosterpack.28"; // P4.7
+// Name - The C/C++ identifier used in applications as the index parameter passed to ADC runtime APIs
+ADC2.$name = "Pressure_Sensor";
+// Name
+ADC2.adc.$name = "MyADC141";
+// Assign pin
+ADC2.adc.adcPin.$assign = "boosterpack.27"; // P4.5
+// Name - The C/C++ identifier used in applications as the index parameter passed to PWM runtime APIs
+PWM1.$name = "CONFIG_PWM_0";
+// Name
+PWM1.timer.$name = "MyTIMER_A1";
+// Assign pin
+PWM1.timer.pwmPin.$assign = "boosterpack.31"; // P3.7
+// Name - The C/C++ identifier used in applications as the index parameter passed to PWM runtime APIs
+PWM2.$name = "CONFIG_PWM_1";
+// Name
+PWM2.timer.$name = "MyTIMER_A1";
+// Assign pin
+PWM2.timer.pwmPin.$assign = "boosterpack.32"; // P3.5
+// Name - The C/C++ identifier used in applications as the index parameter passed to PWM runtime APIs
+PWM3.$name = "CONFIG_PWM_2";
+// Name
+PWM3.timer.$name = "MyTIMER_A1";
+// Assign pin
+PWM3.timer.pwmPin.$assign = "boosterpack.34"; // P2.3
+// Name - The C/C++ identifier used in applications as the index parameter passed to PWM runtime APIs
+PWM4.$name = "CONFIG_PWM_3";
+// Name
+PWM4.timer.$name = "MyTIMER_A1";
+// Assign pin
+PWM4.timer.pwmPin.$assign = "boosterpack.35"; // P6.7
+// Name - The C/C++ identifier used in applications as the index parameter passed to PWM runtime APIs
+PWM5.$name = "CONFIG_PWM_4";
+// Name
+PWM5.timer.$name = "MyTIMER_A1";
+// Assign pin
+PWM5.timer.pwmPin.$assign = "boosterpack.36"; // P6.6
+// Name - The C/C++ identifier used in applications as the index parameter passed to PWM runtime APIs
+PWM6.$name = "CONFIG_PWM_5";
+// Name
+PWM6.timer.$name = "MyTIMER_A1";
+// Assign pin
+PWM6.timer.pwmPin.$assign = "boosterpack.37"; // P5.6
+// Name - The C/C++ identifier used in applications as the index parameter passed to PWM runtime APIs
+PWM7.$name = "CONFIG_PWM_6";
+// Use Hardware - Select the hardware to use, or 'None' to use available header pins
+PWM7.$hardware = system.deviceData.board.components.LED2_GREEN;
+// Name
+PWM7.timer.$name = "MyTIMER_A1";
+// Suggest solution
+RTOS.timer0.resource.$suggestSolution = "Timer_A0";
+// Suggest solution
+I2C1.i2c.$suggestSolution = "EUSCI_B1";
+// Suggest solution
+UART1.uart.$suggestSolution = "EUSCI_A0";
+// Suggest solution
+UART1.uart.txPin.$suggestSolution = "7";
+// Suggest solution
+UART1.uart.rxPin.$suggestSolution = "6";
+// Suggest solution
+ADC1.adc.$suggestSolution = "ADC14";
+// Suggest solution
+ADC2.adc.$suggestSolution = "ADC14";
+// Suggest solution
+PWM1.timer.$suggestSolution = "Timer_A1";
+// Suggest solution
+PWM2.timer.$suggestSolution = "Timer_A1";
+// Suggest solution
+PWM3.timer.$suggestSolution = "Timer_A1";
+// Suggest solution
+PWM4.timer.$suggestSolution = "Timer_A2";
+// Suggest solution
+PWM5.timer.$suggestSolution = "Timer_A2";
+// Suggest solution
+PWM6.timer.$suggestSolution = "Timer_A2";
+// Suggest solution
+PWM7.timer.$suggestSolution = "Timer_A1";
+// Suggest solution
+PWM7.timer.pwmPin.$suggestSolution = "17";
