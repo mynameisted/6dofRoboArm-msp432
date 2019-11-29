@@ -23,11 +23,16 @@
 
 extern pthread_t bluetoothThreadHandler;
 
-extern sem_t txSem; // Semaphore to ensure each thread only access the bluetooth transmit function and variables one at a time
-extern sem_t rxSem; // Semaphore to ensure each thread only access received data variables from one at a time
+// Semaphore to ensure each thread only access the bluetooth transmit function and variables one at a time
+extern sem_t txSem;
+// Semaphore to ensure each thread only access received data variables from one at a time
+extern sem_t rxSem;
 
-extern char uartTXBuffer[50];   // Buffer for handling transmission of data
-extern char uartRXBuffer[50];   // Buffer for handling incoming data
+// Buffer for handling transmission of data
+extern char uartTXBuffer[50];
+
+// Buffer for handling incoming data
+extern char uartRXBuffer[50];
 extern UART_Handle uart;
 
 
@@ -40,6 +45,12 @@ extern float rxValue;
 extern char rxField2[3];
 extern float rxValue2;
 
+/*
+ * Function Bluetooth Declarations (HC-05)
+ */
+extern void BluetoothReceived();
+extern void BluetoothWriteKeyValue(char key[], double value);
+extern void BluetoothWriteKeyValue2(char key[], double value, char key2[], double value2);
 extern void *bluetoothThread(void *arg0);
 
 #endif /* MSP432_BLUETOOTH_H_ */

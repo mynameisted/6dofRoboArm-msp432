@@ -45,21 +45,20 @@
 /* Driver configuration */
 #include <ti/drivers/Board.h>
 
+
+/* Additional Drivers */
 #include "msp432_bluetooth.h"
-
-#include "msp432_mpu6050.h"
-
 #include "msp432_sensors.h"
-
 #include "MSP432_MG995.h"
-
-#include "LED.h"
 
 /* Stack size in bytes */
 #define THREADSTACKSIZE    2048
 
 /*
  *  ======== main ========
+ *
+ *  Robotic Arm code controls the servos and sensor of the arm
+ *  This code receives input from the arm controller to control how the different component of the arm moves
  */
 int main(void)
     {
@@ -85,7 +84,7 @@ int main(void)
     }
 
 
-    //Bluetooth Thread
+    /*Bluetooth Thread*/
     priParam.sched_priority = 1;
     pthread_attr_setschedparam(&attrs, &priParam);
     retc = pthread_create(&bluetoothThreadHandler, &attrs, bluetoothThread, NULL);
@@ -93,6 +92,7 @@ int main(void)
         while (1) {}
     }
 
+    /*Servo Thread*/
     priParam.sched_priority = 2;
     pthread_attr_setschedparam(&attrs, &priParam);
     retc = pthread_create(&servoThreadHandler, &attrs, servoThread, NULL);
@@ -101,7 +101,7 @@ int main(void)
         while (1) {}
     }
 
-    //PressureSensor Thread
+    /*PressureSensor Thread*/
     priParam.sched_priority = 2;
     pthread_attr_setschedparam(&attrs, &priParam);
     retc = pthread_create(&pressureSensorThreadHandler, &attrs, pressureSensorThread, NULL);
@@ -109,44 +109,6 @@ int main(void)
 
         while (1) {}
     }
-
-    /*
-    //Bluetooth Thread
-    priParam.sched_priority = 1;
-    pthread_attr_setschedparam(&attrs, &priParam);
-    retc = pthread_create(&bluetoothThreadHandler, &attrs, bluetoothThread, NULL);
-    if (retc != 0) {
-        while (1) {}
-    }
-
-    //MPU6050 Thread
-    priParam.sched_priority = 2;
-    pthread_attr_setschedparam(&attrs, &priParam);
-    retc = pthread_create(&mpu6050ThreadHandler, &attrs, mpu6050Thread, NULL);
-    if (retc != 0) {
-
-        while (1) {}
-    }
-
-    //FlexSensor Thread
-    priParam.sched_priority = 2;
-    pthread_attr_setschedparam(&attrs, &priParam);
-    retc = pthread_create(&flexSensorThreadHandler, &attrs, flexSensorThread, NULL);
-    if (retc != 0) {
-
-        while (1) {}
-    }
-
-    priParam.sched_priority = 1;
-    pthread_attr_setschedparam(&attrs, &priParam);
-    retc = pthread_create(&ledThreadHandler, &attrs, ledThread, NULL);
-    if (retc != 0) {
-
-        while (1) {}
-    }
-
-    */
-
 
 
     BIOS_start();

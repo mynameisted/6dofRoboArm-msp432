@@ -5,14 +5,20 @@
  *      Author: Ted
  */
 
+
+#ifndef MSP432_MPU6050_H_
+#define MSP432_MPU6050_H_
+
 #include <pthread.h>
 #include <semaphore.h>
 #include <stdint.h>
 #include <stdio.h>
 #include <ti/drivers/I2C.h>
 
-#ifndef MSP432_MPU6050_H_
-#define MSP432_MPU6050_H_
+/*
+ * Function Prototype Declarations (RTOS Threading)
+ *
+ */
 
 extern pthread_t mpu6050ThreadHandler;
 extern void *mpu6050Thread(void *arg0);

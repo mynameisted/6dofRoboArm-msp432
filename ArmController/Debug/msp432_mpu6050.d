@@ -19,7 +19,7 @@ msp432_mpu6050.obj: C:/ti/simplelink_msp432p4_sdk_3_30_00_13/source/third_party/
 msp432_mpu6050.obj: C:/ti/simplelink_msp432p4_sdk_3_30_00_13/source/third_party/CMSIS/Include/cmsis_ccs.h
 msp432_mpu6050.obj: C:/ti/simplelink_msp432p4_sdk_3_30_00_13/source/third_party/CMSIS/Include/mpu_armv7.h
 msp432_mpu6050.obj: C:/ti/ccs920/ccs/ccs_base/arm/include/system_msp432p401r.h
-msp432_mpu6050.obj: C:/Users/Xing//\ Long/workspace_v9_2/RoboArmControl/msp432_bluetooth.h
+msp432_mpu6050.obj: C:/Users/Xing//\ Long/workspace_v9_2/ArmController/msp432_bluetooth.h
 msp432_mpu6050.obj: C:/ti/simplelink_msp432p4_sdk_3_30_00_13/source/ti/posix/ccs/unistd.h
 msp432_mpu6050.obj: C:/ti/simplelink_msp432p4_sdk_3_30_00_13/source/ti/posix/ccs/sys/types.h
 msp432_mpu6050.obj: C:/ti/ccs920/ccs/tools/compiler/ti-cgt-arm_18.12.3.LTS/include/stddef.h
@@ -40,11 +40,11 @@ msp432_mpu6050.obj: C:/ti/ccs920/ccs/tools/compiler/ti-cgt-arm_18.12.3.LTS/inclu
 msp432_mpu6050.obj: C:/ti/ccs920/ccs/tools/compiler/ti-cgt-arm_18.12.3.LTS/include/../include/sys/timespec.h
 msp432_mpu6050.obj: C:/ti/ccs920/ccs/tools/compiler/ti-cgt-arm_18.12.3.LTS/include/sys/_timespec.h
 msp432_mpu6050.obj: C:/ti/simplelink_msp432p4_sdk_3_30_00_13/source/ti/drivers/UART.h
-msp432_mpu6050.obj: C:/Users/Xing//\ Long/workspace_v9_2/RoboArmControl/Debug/syscfg/ti_drivers_config.h
+msp432_mpu6050.obj: C:/Users/Xing//\ Long/workspace_v9_2/ArmController/Debug/syscfg/ti_drivers_config.h
 msp432_mpu6050.obj: C:/ti/simplelink_msp432p4_sdk_3_30_00_13/source/ti/devices/DeviceFamily.h
 msp432_mpu6050.obj: C:/ti/simplelink_msp432p4_sdk_3_30_00_13/source/ti/drivers/I2C.h
 msp432_mpu6050.obj: C:/ti/ccs920/ccs/tools/compiler/ti-cgt-arm_18.12.3.LTS/include/stdbool.h
-msp432_mpu6050.obj: C:/Users/Xing//\ Long/workspace_v9_2/RoboArmControl/msp432_mpu6050.h
+msp432_mpu6050.obj: C:/Users/Xing//\ Long/workspace_v9_2/ArmController/msp432_mpu6050.h
 msp432_mpu6050.obj: C:/ti/simplelink_msp432p4_sdk_3_30_00_13/source/ti/posix/ccs/pthread.h
 msp432_mpu6050.obj: C:/ti/simplelink_msp432p4_sdk_3_30_00_13/source/ti/posix/ccs/sched.h
 msp432_mpu6050.obj: C:/ti/ccs920/ccs/tools/compiler/ti-cgt-arm_18.12.3.LTS/include/Math.h
@@ -70,7 +70,7 @@ C:/ti/simplelink_msp432p4_sdk_3_30_00_13/source/third_party/CMSIS/Include/cmsis_
 C:/ti/simplelink_msp432p4_sdk_3_30_00_13/source/third_party/CMSIS/Include/cmsis_ccs.h: 
 C:/ti/simplelink_msp432p4_sdk_3_30_00_13/source/third_party/CMSIS/Include/mpu_armv7.h: 
 C:/ti/ccs920/ccs/ccs_base/arm/include/system_msp432p401r.h: 
-C:/Users/Xing//\ Long/workspace_v9_2/RoboArmControl/msp432_bluetooth.h: 
+C:/Users/Xing//\ Long/workspace_v9_2/ArmController/msp432_bluetooth.h: 
 C:/ti/simplelink_msp432p4_sdk_3_30_00_13/source/ti/posix/ccs/unistd.h: 
 C:/ti/simplelink_msp432p4_sdk_3_30_00_13/source/ti/posix/ccs/sys/types.h: 
 C:/ti/ccs920/ccs/tools/compiler/ti-cgt-arm_18.12.3.LTS/include/stddef.h: 
@@ -91,11 +91,11 @@ C:/ti/ccs920/ccs/tools/compiler/ti-cgt-arm_18.12.3.LTS/include/../include/signal
 C:/ti/ccs920/ccs/tools/compiler/ti-cgt-arm_18.12.3.LTS/include/../include/sys/timespec.h: 
 C:/ti/ccs920/ccs/tools/compiler/ti-cgt-arm_18.12.3.LTS/include/sys/_timespec.h: 
 C:/ti/simplelink_msp432p4_sdk_3_30_00_13/source/ti/drivers/UART.h: 
-C:/Users/Xing//\ Long/workspace_v9_2/RoboArmControl/Debug/syscfg/ti_drivers_config.h: 
+C:/Users/Xing//\ Long/workspace_v9_2/ArmController/Debug/syscfg/ti_drivers_config.h: 
 C:/ti/simplelink_msp432p4_sdk_3_30_00_13/source/ti/devices/DeviceFamily.h: 
 C:/ti/simplelink_msp432p4_sdk_3_30_00_13/source/ti/drivers/I2C.h: 
 C:/ti/ccs920/ccs/tools/compiler/ti-cgt-arm_18.12.3.LTS/include/stdbool.h: 
-C:/Users/Xing//\ Long/workspace_v9_2/RoboArmControl/msp432_mpu6050.h: 
+C:/Users/Xing//\ Long/workspace_v9_2/ArmController/msp432_mpu6050.h: 
 C:/ti/simplelink_msp432p4_sdk_3_30_00_13/source/ti/posix/ccs/pthread.h: 
 C:/ti/simplelink_msp432p4_sdk_3_30_00_13/source/ti/posix/ccs/sched.h: 
 C:/ti/ccs920/ccs/tools/compiler/ti-cgt-arm_18.12.3.LTS/include/Math.h: 

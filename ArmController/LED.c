@@ -17,15 +17,24 @@
 
 pthread_t ledThreadHandler;
 
+
+/*
+ * ========================================
+ * ledThread
+ * ========================================
+ * This thread intialises necessary pins to handle the Green LED on the msp432
+ * The thread obtains data from the pressure sensor which translate the values into the brightness of the LED
+ *
+ */
 void *ledThread(void *arg0){
 
-    /* Period and duty in microseconds */
+       //Period and duty in microseconds
        uint16_t   pwmPeriod = 1000;
        uint16_t   duty = 0;
        PWM_Handle pwm1 = NULL;
        PWM_Params params;
 
-       /* Call driver init functions. */
+       //Call driver init functions.
        PWM_init();
 
        PWM_Params_init(&params);
@@ -43,20 +52,25 @@ void *ledThread(void *arg0){
        printf("LED Thread Started\n");
        while (1) {
 
-           sem_wait(&rxSem);    // Obtain Rxbuffer semaphore to read values from bluetooth Rxbuffer
+           // Obtain Rxbuffer semaphore to read values from bluetooth Rxbuffer
+           sem_wait(&rxSem);
 
            if (strcmp(rxField, "PS") == 0){
                duty = (uint16_t) rxValue;
            }
 
-           if(duty > pwmPeriod){    // Prevent duty from exceeding pwm period
+           // Prevent duty from exceeding pwm period
+           if(duty > pwmPeriod){
                duty = pwmPeriod;
            }
-           //printf("LED:%d\n",duty);
+
+           // Set PWM Duty Of Green LED
            PWM_setDuty(pwm1, duty);
 
-           sem_post(&rxSem);    // Release Rxbuffer semaphore
-           sleep(0.5);          // Put thread to sleep to prevent Thread from utilizing too much of cpu resource
+           // Release Rxbuffer semaphore
+           sem_post(&rxSem);
+           // Put thread to sleep to prevent Thread from utilizing too much of cpu resource
+           sleep(0.5);
        }
 }
 

@@ -89,23 +89,18 @@ main_tirtos.obj: C:/ti/ccs920/ccs/tools/compiler/ti-cgt-arm_18.12.3.LTS/include/
 main_tirtos.obj: C:/ti/ccs920/ccs/tools/compiler/ti-cgt-arm_18.12.3.LTS/include/string.h
 main_tirtos.obj: C:/ti/simplelink_msp432p4_sdk_3_30_00_13/source/ti/posix/ccs/semaphore.h
 main_tirtos.obj: C:/ti/simplelink_msp432p4_sdk_3_30_00_13/source/ti/drivers/UART.h
-main_tirtos.obj: C:/Users/Xing//\ Long/workspace_v9_2/RoboArmControl/Debug/syscfg/ti_drivers_config.h
+main_tirtos.obj: C:/Users/Xing//\ Long/workspace_v9_2/RoboticArm/Debug/syscfg/ti_drivers_config.h
 main_tirtos.obj: C:/ti/simplelink_msp432p4_sdk_3_30_00_13/source/ti/devices/DeviceFamily.h
 main_tirtos.obj: C:/ti/simplelink_msp432p4_sdk_3_30_00_13/source/ti/drivers/I2C.h
 main_tirtos.obj: C:/ti/ccs920/ccs/tools/compiler/ti-cgt-arm_18.12.3.LTS/include/stdbool.h
-main_tirtos.obj: ../msp432_mpu6050.h
 main_tirtos.obj: ../msp432_sensors.h
 main_tirtos.obj: C:/ti/ccs920/ccs/tools/compiler/ti-cgt-arm_18.12.3.LTS/include/stdlib.h
 main_tirtos.obj: C:/ti/simplelink_msp432p4_sdk_3_30_00_13/source/ti/drivers/ADC.h
-main_tirtos.obj: C:/Users/Xing//\ Long/workspace_v9_2/RoboArmControl/msp432_bluetooth.h
+main_tirtos.obj: C:/Users/Xing//\ Long/workspace_v9_2/RoboticArm/msp432_bluetooth.h
 main_tirtos.obj: C:/ti/ccs920/ccs/tools/compiler/ti-cgt-arm_18.12.3.LTS/include/stdlib.h
 main_tirtos.obj: ../MSP432_MG995.h
 main_tirtos.obj: C:/ti/ccs920/ccs/tools/compiler/ti-cgt-arm_18.12.3.LTS/include/stdlib.h
 main_tirtos.obj: C:/ti/simplelink_msp432p4_sdk_3_30_00_13/source/ti/drivers/PWM.h
-main_tirtos.obj: ../LED.h
-main_tirtos.obj: C:/ti/ccs920/ccs/tools/compiler/ti-cgt-arm_18.12.3.LTS/include/stdlib.h
-main_tirtos.obj: ../msp432_bluetooth.h
-main_tirtos.obj: C:/ti/ccs920/ccs/tools/compiler/ti-cgt-arm_18.12.3.LTS/include/stdlib.h
 
 ../main_tirtos.c: 
 C:/ti/ccs920/ccs/tools/compiler/ti-cgt-arm_18.12.3.LTS/include/stdint.h: 
@@ -196,20 +191,15 @@ C:/ti/ccs920/ccs/tools/compiler/ti-cgt-arm_18.12.3.LTS/include/stdlib.h:
 C:/ti/ccs920/ccs/tools/compiler/ti-cgt-arm_18.12.3.LTS/include/string.h: 
 C:/ti/simplelink_msp432p4_sdk_3_30_00_13/source/ti/posix/ccs/semaphore.h: 
 C:/ti/simplelink_msp432p4_sdk_3_30_00_13/source/ti/drivers/UART.h: 
-C:/Users/Xing//\ Long/workspace_v9_2/RoboArmControl/Debug/syscfg/ti_drivers_config.h: 
+C:/Users/Xing//\ Long/workspace_v9_2/RoboticArm/Debug/syscfg/ti_drivers_config.h: 
 C:/ti/simplelink_msp432p4_sdk_3_30_00_13/source/ti/devices/DeviceFamily.h: 
 C:/ti/simplelink_msp432p4_sdk_3_30_00_13/source/ti/drivers/I2C.h: 
 C:/ti/ccs920/ccs/tools/compiler/ti-cgt-arm_18.12.3.LTS/include/stdbool.h: 
-../msp432_mpu6050.h: 
 ../msp432_sensors.h: 
 C:/ti/ccs920/ccs/tools/compiler/ti-cgt-arm_18.12.3.LTS/include/stdlib.h: 
 C:/ti/simplelink_msp432p4_sdk_3_30_00_13/source/ti/drivers/ADC.h: 
-C:/Users/Xing//\ Long/workspace_v9_2/RoboArmControl/msp432_bluetooth.h: 
+C:/Users/Xing//\ Long/workspace_v9_2/RoboticArm/msp432_bluetooth.h: 
 C:/ti/ccs920/ccs/tools/compiler/ti-cgt-arm_18.12.3.LTS/include/stdlib.h: 
 ../MSP432_MG995.h: 
 C:/ti/ccs920/ccs/tools/compiler/ti-cgt-arm_18.12.3.LTS/include/stdlib.h: 
 C:/ti/simplelink_msp432p4_sdk_3_30_00_13/source/ti/drivers/PWM.h: 
-../LED.h: 
-C:/ti/ccs920/ccs/tools/compiler/ti-cgt-arm_18.12.3.LTS/include/stdlib.h: 
-../msp432_bluetooth.h: 
-C:/ti/ccs920/ccs/tools/compiler/ti-cgt-arm_18.12.3.LTS/include/stdlib.h: 

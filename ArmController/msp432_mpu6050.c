@@ -1,9 +1,10 @@
 /*
- * mps432_mpu6050.c
+ * msp432_mpu6050.c
  *
  *  Created on: Oct 26, 2019
  *      Author: Ted
  */
+
 #include "msp.h"
 #include <msp432_bluetooth.h>
 #include <msp432_mpu6050.h>
@@ -528,7 +529,7 @@ void calibrate_sensors() {
     printf("Finished Calibration\n");
 }
 
-/*
+/* 
  * ========================================
  * mpu6050Thread
  * ========================================

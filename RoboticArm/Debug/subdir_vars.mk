@@ -12,12 +12,10 @@ SYSCFG_SRCS += \
 ../i2cmasterexample1.syscfg 
 
 C_SRCS += \
-../LED.c \
 ../MSP432_MG995.c \
 ./syscfg/ti_drivers_config.c \
 ../main_tirtos.c \
 ../msp432_bluetooth.c \
-../msp432_mpu6050.c \
 ../msp432_sensors.c 
 
 GEN_FILES += \
@@ -27,21 +25,17 @@ GEN_MISC_DIRS += \
 ./syscfg/ 
 
 C_DEPS += \
-./LED.d \
 ./MSP432_MG995.d \
 ./syscfg/ti_drivers_config.d \
 ./main_tirtos.d \
 ./msp432_bluetooth.d \
-./msp432_mpu6050.d \
 ./msp432_sensors.d 
 
 OBJS += \
-./LED.obj \
 ./MSP432_MG995.obj \
 ./syscfg/ti_drivers_config.obj \
 ./main_tirtos.obj \
 ./msp432_bluetooth.obj \
-./msp432_mpu6050.obj \
 ./msp432_sensors.obj 
 
 GEN_MISC_FILES += \
@@ -52,12 +46,10 @@ GEN_MISC_DIRS__QUOTED += \
 "syscfg\" 
 
 OBJS__QUOTED += \
-"LED.obj" \
 "MSP432_MG995.obj" \
 "syscfg\ti_drivers_config.obj" \
 "main_tirtos.obj" \
 "msp432_bluetooth.obj" \
-"msp432_mpu6050.obj" \
 "msp432_sensors.obj" 
 
 GEN_MISC_FILES__QUOTED += \
@@ -65,19 +57,16 @@ GEN_MISC_FILES__QUOTED += \
 "syscfg\syscfg_c.rov.xs" 
 
 C_DEPS__QUOTED += \
-"LED.d" \
 "MSP432_MG995.d" \
 "syscfg\ti_drivers_config.d" \
 "main_tirtos.d" \
 "msp432_bluetooth.d" \
-"msp432_mpu6050.d" \
 "msp432_sensors.d" 
 
 GEN_FILES__QUOTED += \
 "syscfg\ti_drivers_config.c" 
 
 C_SRCS__QUOTED += \
-"../LED.c" \
 "../MSP432_MG995.c" \
 "./syscfg/ti_drivers_config.c" \
 "../main_tirtos.c" \

@@ -31,10 +31,10 @@ msp432_sensors.obj: C:/ti/ccs920/ccs/tools/compiler/ti-cgt-arm_18.12.3.LTS/inclu
 msp432_sensors.obj: C:/ti/simplelink_msp432p4_sdk_3_30_00_13/source/ti/posix/ccs/sched.h
 msp432_sensors.obj: C:/ti/simplelink_msp432p4_sdk_3_30_00_13/source/ti/drivers/ADC.h
 msp432_sensors.obj: C:/ti/ccs920/ccs/tools/compiler/ti-cgt-arm_18.12.3.LTS/include/stdbool.h
-msp432_sensors.obj: C:/Users/Xing//\ Long/workspace_v9_2/RoboArmControl/Debug/syscfg/ti_drivers_config.h
+msp432_sensors.obj: C:/Users/Xing//\ Long/workspace_v9_2/ArmController/Debug/syscfg/ti_drivers_config.h
 msp432_sensors.obj: C:/ti/simplelink_msp432p4_sdk_3_30_00_13/source/ti/devices/DeviceFamily.h
 msp432_sensors.obj: C:/ti/simplelink_msp432p4_sdk_3_30_00_13/source/ti/drivers/I2C.h
-msp432_sensors.obj: C:/Users/Xing//\ Long/workspace_v9_2/RoboArmControl/msp432_bluetooth.h
+msp432_sensors.obj: C:/Users/Xing//\ Long/workspace_v9_2/ArmController/msp432_bluetooth.h
 msp432_sensors.obj: C:/ti/ccs920/ccs/tools/compiler/ti-cgt-arm_18.12.3.LTS/include/stdlib.h
 msp432_sensors.obj: C:/ti/simplelink_msp432p4_sdk_3_30_00_13/source/ti/posix/ccs/semaphore.h
 msp432_sensors.obj: C:/ti/simplelink_msp432p4_sdk_3_30_00_13/source/ti/drivers/UART.h
@@ -70,10 +70,10 @@ C:/ti/ccs920/ccs/tools/compiler/ti-cgt-arm_18.12.3.LTS/include/sys/_timespec.h:
 C:/ti/simplelink_msp432p4_sdk_3_30_00_13/source/ti/posix/ccs/sched.h: 
 C:/ti/simplelink_msp432p4_sdk_3_30_00_13/source/ti/drivers/ADC.h: 
 C:/ti/ccs920/ccs/tools/compiler/ti-cgt-arm_18.12.3.LTS/include/stdbool.h: 
-C:/Users/Xing//\ Long/workspace_v9_2/RoboArmControl/Debug/syscfg/ti_drivers_config.h: 
+C:/Users/Xing//\ Long/workspace_v9_2/ArmController/Debug/syscfg/ti_drivers_config.h: 
 C:/ti/simplelink_msp432p4_sdk_3_30_00_13/source/ti/devices/DeviceFamily.h: 
 C:/ti/simplelink_msp432p4_sdk_3_30_00_13/source/ti/drivers/I2C.h: 
-C:/Users/Xing//\ Long/workspace_v9_2/RoboArmControl/msp432_bluetooth.h: 
+C:/Users/Xing//\ Long/workspace_v9_2/ArmController/msp432_bluetooth.h: 
 C:/ti/ccs920/ccs/tools/compiler/ti-cgt-arm_18.12.3.LTS/include/stdlib.h: 
 C:/ti/simplelink_msp432p4_sdk_3_30_00_13/source/ti/posix/ccs/semaphore.h: 
 C:/ti/simplelink_msp432p4_sdk_3_30_00_13/source/ti/drivers/UART.h: 

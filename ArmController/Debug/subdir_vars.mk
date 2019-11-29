@@ -13,7 +13,6 @@ SYSCFG_SRCS += \
 
 C_SRCS += \
 ../LED.c \
-../MSP432_MG995.c \
 ./syscfg/ti_drivers_config.c \
 ../main_tirtos.c \
 ../msp432_bluetooth.c \
@@ -28,7 +27,6 @@ GEN_MISC_DIRS += \
 
 C_DEPS += \
 ./LED.d \
-./MSP432_MG995.d \
 ./syscfg/ti_drivers_config.d \
 ./main_tirtos.d \
 ./msp432_bluetooth.d \
@@ -37,7 +35,6 @@ C_DEPS += \
 
 OBJS += \
 ./LED.obj \
-./MSP432_MG995.obj \
 ./syscfg/ti_drivers_config.obj \
 ./main_tirtos.obj \
 ./msp432_bluetooth.obj \
@@ -53,7 +50,6 @@ GEN_MISC_DIRS__QUOTED += \
 
 OBJS__QUOTED += \
 "LED.obj" \
-"MSP432_MG995.obj" \
 "syscfg\ti_drivers_config.obj" \
 "main_tirtos.obj" \
 "msp432_bluetooth.obj" \
@@ -66,7 +62,6 @@ GEN_MISC_FILES__QUOTED += \
 
 C_DEPS__QUOTED += \
 "LED.d" \
-"MSP432_MG995.d" \
 "syscfg\ti_drivers_config.d" \
 "main_tirtos.d" \
 "msp432_bluetooth.d" \
@@ -78,7 +73,6 @@ GEN_FILES__QUOTED += \
 
 C_SRCS__QUOTED += \
 "../LED.c" \
-"../MSP432_MG995.c" \
 "./syscfg/ti_drivers_config.c" \
 "../main_tirtos.c" \
 "../msp432_bluetooth.c" \

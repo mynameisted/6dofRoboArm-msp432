@@ -10,12 +10,10 @@ GEN_OPTS__FLAG := --cmd_file="C:/Users/Xing Long/workspace_v9_2/tirtos_builds_MS
 GEN_CMDS__FLAG := -l"C:/Users/Xing Long/workspace_v9_2/tirtos_builds_MSP_EXP432P401R_release_ccs/Debug/configPkg/linker.cmd"
 
 ORDERED_OBJS += \
-"./LED.obj" \
 "./MSP432_MG995.obj" \
 "./syscfg/ti_drivers_config.obj" \
 "./main_tirtos.obj" \
 "./msp432_bluetooth.obj" \
-"./msp432_mpu6050.obj" \
 "./msp432_sensors.obj" \
 "../MSP_EXP432P401R_TIRTOS.cmd" \
 -l"ti/display/lib/display.aem4f" \
@@ -150,7 +148,7 @@ all: $(OBJS) $(CMD_SRCS) $(GEN_CMDS)
 	@$(MAKE) --no-print-directory -Onone "RoboticArm.out"
 
 dependents:
-	-cd C:/Users/Xing\ Long/workspace_v9_2/tirtos_builds_MSP_EXP432P401R_release_ccs/Debug && $(MAKE) clean all
+	-cd C:/Users/Xing\ Long/workspace_v9_2/tirtos_builds_MSP_EXP432P401R_release_ccs/Debug && $(MAKE) all
 
 # Tool invocations
 RoboticArm.out: $(OBJS) $(CMD_SRCS) $(GEN_CMDS) C:/Users/Xing\ Long/workspace_v9_2/tirtos_builds_MSP_EXP432P401R_release_ccs/Debug/tirtos_builds_MSP_EXP432P401R_release_ccs.lib
@@ -170,8 +168,8 @@ RoboticArm.hex: $(EXE_OUTPUTS)
 # Other Targets
 clean:
 	-$(RM) $(GEN_MISC_FILES__QUOTED)$(BIN_OUTPUTS__QUOTED)$(GEN_FILES__QUOTED)$(EXE_OUTPUTS__QUOTED)
-	-$(RM) "LED.obj" "MSP432_MG995.obj" "syscfg\ti_drivers_config.obj" "main_tirtos.obj" "msp432_bluetooth.obj" "msp432_mpu6050.obj" "msp432_sensors.obj" 
-	-$(RM) "LED.d" "MSP432_MG995.d" "syscfg\ti_drivers_config.d" "main_tirtos.d" "msp432_bluetooth.d" "msp432_mpu6050.d" "msp432_sensors.d" 
+	-$(RM) "MSP432_MG995.obj" "syscfg\ti_drivers_config.obj" "main_tirtos.obj" "msp432_bluetooth.obj" "msp432_sensors.obj" 
+	-$(RM) "MSP432_MG995.d" "syscfg\ti_drivers_config.d" "main_tirtos.d" "msp432_bluetooth.d" "msp432_sensors.d" 
 	-$(RMDIR) $(GEN_MISC_DIRS__QUOTED)
 	-@echo 'Finished clean'
 	-@echo ' '

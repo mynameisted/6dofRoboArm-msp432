@@ -29,7 +29,7 @@ msp432_bluetooth.obj: C:/ti/ccs920/ccs/tools/compiler/ti-cgt-arm_18.12.3.LTS/inc
 msp432_bluetooth.obj: C:/ti/ccs920/ccs/tools/compiler/ti-cgt-arm_18.12.3.LTS/include/../include/sys/timespec.h
 msp432_bluetooth.obj: C:/ti/ccs920/ccs/tools/compiler/ti-cgt-arm_18.12.3.LTS/include/sys/_timespec.h
 msp432_bluetooth.obj: C:/ti/simplelink_msp432p4_sdk_3_30_00_13/source/ti/drivers/UART.h
-msp432_bluetooth.obj: C:/Users/Xing//\ Long/workspace_v9_2/RoboArmControl/Debug/syscfg/ti_drivers_config.h
+msp432_bluetooth.obj: C:/Users/Xing//\ Long/workspace_v9_2/ArmController/Debug/syscfg/ti_drivers_config.h
 msp432_bluetooth.obj: C:/ti/simplelink_msp432p4_sdk_3_30_00_13/source/ti/devices/DeviceFamily.h
 msp432_bluetooth.obj: C:/ti/simplelink_msp432p4_sdk_3_30_00_13/source/ti/drivers/I2C.h
 msp432_bluetooth.obj: C:/ti/ccs920/ccs/tools/compiler/ti-cgt-arm_18.12.3.LTS/include/stdbool.h
@@ -63,7 +63,7 @@ C:/ti/ccs920/ccs/tools/compiler/ti-cgt-arm_18.12.3.LTS/include/../include/signal
 C:/ti/ccs920/ccs/tools/compiler/ti-cgt-arm_18.12.3.LTS/include/../include/sys/timespec.h: 
 C:/ti/ccs920/ccs/tools/compiler/ti-cgt-arm_18.12.3.LTS/include/sys/_timespec.h: 
 C:/ti/simplelink_msp432p4_sdk_3_30_00_13/source/ti/drivers/UART.h: 
-C:/Users/Xing//\ Long/workspace_v9_2/RoboArmControl/Debug/syscfg/ti_drivers_config.h: 
+C:/Users/Xing//\ Long/workspace_v9_2/ArmController/Debug/syscfg/ti_drivers_config.h: 
 C:/ti/simplelink_msp432p4_sdk_3_30_00_13/source/ti/devices/DeviceFamily.h: 
 C:/ti/simplelink_msp432p4_sdk_3_30_00_13/source/ti/drivers/I2C.h: 
 C:/ti/ccs920/ccs/tools/compiler/ti-cgt-arm_18.12.3.LTS/include/stdbool.h: 

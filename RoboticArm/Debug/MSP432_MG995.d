@@ -23,7 +23,7 @@ MSP432_MG995.obj: C:/ti/ccs920/ccs/tools/compiler/ti-cgt-arm_18.12.3.LTS/include
 MSP432_MG995.obj: C:/ti/ccs920/ccs/tools/compiler/ti-cgt-arm_18.12.3.LTS/include/stdlib.h
 MSP432_MG995.obj: C:/ti/ccs920/ccs/tools/compiler/ti-cgt-arm_18.12.3.LTS/include/string.h
 MSP432_MG995.obj: C:/ti/simplelink_msp432p4_sdk_3_30_00_13/source/ti/drivers/PWM.h
-MSP432_MG995.obj: C:/Users/Xing//\ Long/workspace_v9_2/RoboArmControl/Debug/syscfg/ti_drivers_config.h
+MSP432_MG995.obj: C:/Users/Xing//\ Long/workspace_v9_2/RoboticArm/Debug/syscfg/ti_drivers_config.h
 MSP432_MG995.obj: C:/ti/simplelink_msp432p4_sdk_3_30_00_13/source/ti/devices/DeviceFamily.h
 MSP432_MG995.obj: C:/ti/simplelink_msp432p4_sdk_3_30_00_13/source/ti/drivers/I2C.h
 MSP432_MG995.obj: C:/ti/ccs920/ccs/tools/compiler/ti-cgt-arm_18.12.3.LTS/include/stdbool.h
@@ -62,7 +62,7 @@ C:/ti/ccs920/ccs/tools/compiler/ti-cgt-arm_18.12.3.LTS/include/stdarg.h:
 C:/ti/ccs920/ccs/tools/compiler/ti-cgt-arm_18.12.3.LTS/include/stdlib.h: 
 C:/ti/ccs920/ccs/tools/compiler/ti-cgt-arm_18.12.3.LTS/include/string.h: 
 C:/ti/simplelink_msp432p4_sdk_3_30_00_13/source/ti/drivers/PWM.h: 
-C:/Users/Xing//\ Long/workspace_v9_2/RoboArmControl/Debug/syscfg/ti_drivers_config.h: 
+C:/Users/Xing//\ Long/workspace_v9_2/RoboticArm/Debug/syscfg/ti_drivers_config.h: 
 C:/ti/simplelink_msp432p4_sdk_3_30_00_13/source/ti/devices/DeviceFamily.h: 
 C:/ti/simplelink_msp432p4_sdk_3_30_00_13/source/ti/drivers/I2C.h: 
 C:/ti/ccs920/ccs/tools/compiler/ti-cgt-arm_18.12.3.LTS/include/stdbool.h: 

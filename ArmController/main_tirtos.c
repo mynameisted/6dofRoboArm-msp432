@@ -45,14 +45,10 @@
 /* Driver configuration */
 #include <ti/drivers/Board.h>
 
+/* Additional Drivers */
 #include "msp432_bluetooth.h"
-
 #include "msp432_mpu6050.h"
-
 #include "msp432_sensors.h"
-
-#include "MSP432_MG995.h"
-
 #include "LED.h"
 
 /* Stack size in bytes */
@@ -60,6 +56,7 @@
 
 /*
  *  ======== main ========
+ *  Arm controller sends data to the robotic arm to control how the arm moves
  */
 int main(void)
     {
@@ -84,8 +81,7 @@ int main(void)
         while (1) {}
     }
 
-    /*
-    //Bluetooth Thread
+    /*Bluetooth Thread*/
     priParam.sched_priority = 1;
     pthread_attr_setschedparam(&attrs, &priParam);
     retc = pthread_create(&bluetoothThreadHandler, &attrs, bluetoothThread, NULL);
@@ -93,33 +89,7 @@ int main(void)
         while (1) {}
     }
 
-    priParam.sched_priority = 2;
-    pthread_attr_setschedparam(&attrs, &priParam);
-    retc = pthread_create(&servoThreadHandler, &attrs, servoThread, NULL);
-    if (retc != 0) {
-
-        while (1) {}
-    }
-
-    //PressureSensor Thread
-    priParam.sched_priority = 2;
-    pthread_attr_setschedparam(&attrs, &priParam);
-    retc = pthread_create(&pressureSensorThreadHandler, &attrs, pressureSensorThread, NULL);
-    if (retc != 0) {
-
-        while (1) {}
-    }
-*/
-
-    //Bluetooth Thread
-    priParam.sched_priority = 1;
-    pthread_attr_setschedparam(&attrs, &priParam);
-    retc = pthread_create(&bluetoothThreadHandler, &attrs, bluetoothThread, NULL);
-    if (retc != 0) {
-        while (1) {}
-    }
-
-    //MPU6050 Thread
+    /*MPU6050 Thread*/
     priParam.sched_priority = 2;
     pthread_attr_setschedparam(&attrs, &priParam);
     retc = pthread_create(&mpu6050ThreadHandler, &attrs, mpu6050Thread, NULL);
@@ -128,7 +98,7 @@ int main(void)
         while (1) {}
     }
 
-    //FlexSensor Thread
+    /*FlexSensor Thread*/
     priParam.sched_priority = 2;
     pthread_attr_setschedparam(&attrs, &priParam);
     retc = pthread_create(&flexSensorThreadHandler, &attrs, flexSensorThread, NULL);
@@ -137,17 +107,14 @@ int main(void)
         while (1) {}
     }
 
-    priParam.sched_priority = 1;
+    /*Led Thread*/
+    priParam.sched_priority = 2;
     pthread_attr_setschedparam(&attrs, &priParam);
     retc = pthread_create(&ledThreadHandler, &attrs, ledThread, NULL);
     if (retc != 0) {
 
         while (1) {}
     }
-
-
-
-
 
     BIOS_start();
 
